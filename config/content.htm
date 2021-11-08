@@ -4,7 +4,8 @@
 <p>你的學號: 40923125</p>
 <p>網站倉儲: <a href="https://github.com/40923125/cad2021_hw">https://github.com/40923125/cad2021_hw</a></p>
 <p>網站連結: <a href="https://40923125.github.io/cad2021_hw/content/index.html">https://40923125.github.io/cad2021_hw/content/index.html</a></p>
-<p>其他與作者或作業相關資料說明或介紹</p><h1>HW1</h1>
+<p>其他與作者或作業相關資料說明或介紹</p>
+<h1>HW1</h1>
 <p>HW1 佔學期成績 25%</p>
 <p><span style="background-color: #ffff99;">HW1 必須在 2021.11.10 22:00 之前完成.<br/></span></p>
 <p><a href="https://github.com/mdecourse/cad2021/discussions/5">HW1 具體項目成果回報區</a>將於 2021.09.23 開啟, 於 <span style="background-color: #ff99cc;">2021.11.10 22:00 關閉.</span></p>
@@ -195,6 +196,8 @@ end</pre>
 <p>A:<span>在命令列中執行 pip install pyopenssl後再 cms就可解決(需關閉proxy)</span></p>
 <p><span><img alt="" height="136" src="/images/螢幕擷取畫面 2021-09-27 134736.png" width="500"/> </span></p>
 <h1>wink</h1>
+<p></p><h2>下載及使用</h2>
+<h4>下載</h4>
 <script>
 var winkVideoData = {
   dataVersion: 1,
@@ -217,3 +220,42 @@ var winkVideoData = {
 </div>
 <div class="winkVideoPlayOverlayClass"></div>
 </div>
+<h4>擷取方式</h4>
+<p>新增檔案</p>
+<p><img alt="" height="383" src="/images/001.png" width="259"/></p>
+<p>選擇頁面大小</p>
+<p><img alt="" height="354" src="/images/002.png" width="452"/></p>
+<p>當跳出此頁面即可開始截圖，截完後再按下Finish便可編輯</p>
+<p><img alt="" height="354" src="/images/003.png" width="451"/></p>
+<p></p>
+<h2>推動態</h2>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#Js檔複製於此段(如有設置按鍵會有按鍵位置資訊)
+&lt;script&gt;// &lt;![CDATA[
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+// ]]&gt;&lt;/script&gt;
+#此段為htm檔之資訊,但須更改以下內容:
+#video width="942" height="530"
+#data-dirname="/static"
+#data-varname="winkVideoData"(如需同一頁面放置兩部wink才需更改變數,ex : winkVideoData2)
+#data-dirname="/static"(需將js放置於倉儲內Y:/cmsimde/static下)
+#source src="/downloads/01.mp4"(需將js放置於倉儲內Y:/downloads下)
+&lt;div class="winkVideoContainerClass"&gt;&lt;video width="942" height="530" autoplay="autoplay" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData"&gt;
+&lt;source src="/downloads/01.mp4" type="video/mp4" /&gt;&lt;/video&gt;
+&lt;div class="winkVideoOverlayClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarClass"&gt;&lt;button class="winkVideoControlBarPlayButtonClass"&gt;&lt;/button&gt; &lt;button class="winkVideoControlBarPauseButtonClass"&gt;&lt;/button&gt;
+&lt;div class="winkVideoControlBarProgressLeftClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressEmptyMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressRightClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressFilledMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressThumbClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="winkVideoPlayOverlayClass"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p></p>
