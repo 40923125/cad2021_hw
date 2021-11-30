@@ -196,7 +196,53 @@ end</pre>
 <p>A:<span>在命令列中執行 pip install pyopenssl後再 cms就可解決(需關閉proxy)</span></p>
 <p><span><img alt="" height="136" src="/images/螢幕擷取畫面 2021-09-27 134736.png" width="500"/> </span></p>
 <h1>wink</h1>
-<p></p><h2>下載及使用</h2>
+<p>由於 Wink 所建立的 mp4 影片檔案必須透過 Javascript 與 css 的設定才能具備所有功能, 在 CMSiMDE 頁面新增 Wink mp4 影片時必須直接編輯 html, 除了導入與 mp4 檔案對應的 Javascript 外, HTML5 Videl 必須加以修正才能在手機與平板上的瀏覽器播放影片.</p>
+<p>以下為相關插入範例語法:</p>
+<p><img caption="false" class="add_border" height="221" src="http://mde.tw/cmstemplate/images/wink_for_cmsimde1.png" width="400"/></p>
+<p><img alt="" class="add_border" height="222" src="http://mde.tw/cmstemplate/images/wink_for_cmsimd2.png" width="400"/></p>
+<p>以下則為參考用的 Wink 影片插入 html:</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_586558">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoContainerClass"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">video</code> <code class="html color1">width</code><code class="html plain">=</code><code class="html string">"800"</code> <code class="html color1">height</code><code class="html plain">=</code><code class="html string">"600"</code> <code class="html color1">autoplay</code><code class="html plain">=</code><code class="html string">"autoplay"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoClass"</code> <code class="html color1">data-dirname</code><code class="html plain">=</code><code class="html string">"./../cmsimde/static"</code> <code class="html color1">data-varname</code><code class="html plain">=</code><code class="html string">"winkVideoData2"</code> <code class="html color1">loop</code><code class="html plain">=</code><code class="html string">"loop"</code> <code class="html color1">muted</code><code class="html plain">=</code><code class="html string">""</code> <code class="html color1">playsinline</code><code class="html plain">=</code><code class="html string">""</code><code class="html plain">&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">&lt;</code><code class="html keyword">source</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"./../downloads/wink_tutorial2.mp4"</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"video/mp4"</code> <code class="html plain">/&gt;&lt;/</code><code class="html keyword">video</code><code class="html plain">&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoOverlayClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number4 index3 alt1"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarClass"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">button</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarPlayButtonClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">button</code><code class="html plain">&gt; &lt;</code><code class="html keyword">button</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarPauseButtonClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">button</code><code class="html plain">&gt;</code></div>
+<div class="line number5 index4 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarProgressLeftClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number6 index5 alt1"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarProgressEmptyMiddleClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number7 index6 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarProgressRightClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number8 index7 alt1"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarProgressFilledMiddleClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number9 index8 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoControlBarProgressThumbClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number10 index9 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number11 index10 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"winkVideoPlayOverlayClass"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+<div class="line number12 index11 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>其中的 data-dirname 屬性在動態網頁時必須設定為 /static, 而每一個 mp4 影片都必須有不同的 data-varname 屬性名稱, 以上一頁有兩個 Wink mp4 影片並列時, 第一個影片的 data-varname 為 winkVideoData1, 而第二部的 data-varname 則設為 winkVideoData2.</p>
+<h2>下載及使用</h2>
 <h4>下載</h4>
 <script>
 var winkVideoData = {
@@ -258,4 +304,27 @@ var winkVideoData = {
 &lt;/div&gt;
 &lt;div class="winkVideoPlayOverlayClass"&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
-<p></p>
+<h1>W11</h1>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="540" width="960">
+<source src="/downloads/4.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p>因為我不太會使用coppeliaSim這項軟體，不曉得怎麼更改動力參數，所以只能錄到加入旋轉軸的部分。</p>
